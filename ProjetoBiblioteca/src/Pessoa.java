@@ -6,10 +6,9 @@ public class Pessoa {
     private int cpf;
     private ArrayList<Livros> livrosPegos = new ArrayList<>();
 
-    public Pessoa(String nome, int cpf, ArrayList<Livros> livrosPegos) {
+    public Pessoa(String nome, int cpf) {
         this.nome = nome;
         this.cpf = cpf;
-        this.livrosPegos = livrosPegos;
     }
 
     public String getNome() {
