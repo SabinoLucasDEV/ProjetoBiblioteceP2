@@ -20,10 +20,14 @@ public class Biblioteca {
             "9780132350884"
     );
 
-    public ArrayList<Livros> livros = new ArrayList<>();
+    public ArrayList<Livros> livros = new ArrayList<>(Arrays.asList(livro1, livro2, livro3));
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Biblioteca{" +
+                "livro1=" + livro1 + ",\n" +
+                ", livro2=" + livro2 + ",\n" +
+                ", livro3=" + livro3 + ",\n" +
+                '}';
+    }
 }

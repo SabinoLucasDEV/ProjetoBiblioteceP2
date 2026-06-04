@@ -3,10 +3,10 @@ import java.util.Objects;
 
 public class Pessoa {
     private String nome;
-    private int cpf;
+    private String cpf;
     private ArrayList<Livros> livrosPegos = new ArrayList<>();
 
-    public Pessoa(String nome, int cpf) {
+    public Pessoa(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
@@ -19,11 +19,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
     public ArrayList<Livros> getLivrosPegos() {
@@ -38,10 +38,7 @@ public class Pessoa {
         return cpf == pessoa.cpf;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(cpf);
-    }
+
 
     @Override
     public String toString() {
